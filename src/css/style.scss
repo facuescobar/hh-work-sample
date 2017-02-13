@@ -1,0 +1,126 @@
+/*
+ * Styles
+ */
+ 
+$primary-background: #f4f0ed;
+$secondary-background: #fe6e0d;
+
+* {
+    margin: 0;
+}
+
+html,
+body {
+    background-color: $primary-background;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        font-size: 14px;
+    }
+}
+
+i {
+    margin-right: 5px;
+}
+
+.fa{
+    display: inline;
+}
+
+.loader {
+    text-align: center;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.loader .fa {
+    font-size: 12px;
+}
+
+.loader label {
+    display: block;
+    margin: 5px;
+    font-weight: 600;
+}
+/*
+ * Story
+ */
+.story__head {
+    padding: 10px;
+    background-color: $secondary-background;
+}
+
+.story__head > div {
+    padding: 5px 0;
+}
+
+.story__title {
+    color: #ffe2c2;
+}
+
+.story__info {
+    color: #ffa359;
+}
+
+.story__info > span {
+    margin-right: 10px;
+}
+
+.story__score {
+    background-color: #f76a0e;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+.story__url {
+    color: #ffc79e;
+}
+
+.story__comment {
+    background: #ffffff;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.story__comment:first-child {
+    margin: 0;
+}
+
+.comment__author,
+.comment__author .fa {
+    color: #fe6e0d;
+}
+
+.comment__time {
+    color: #8a8987;
+    margin-left: 10px;
+}
+.comment__time .fa {
+    color: f4f0ed;
+}
+
+.comment__text {
+    overflow: hidden;
+    -webkit-transition: max-height .5s ease;
+       -moz-transition: max-height .5s ease;
+        -ms-transition: max-height .5s ease;
+         -o-transition: max-height .5s ease;
+            transition: max-height .5s ease;
+    max-height: 1000px;
+}
+
+.story__comment.collapsed .comment__text {
+    max-height: 0;
+}
+
+.comment__text .text__content {
+    margin: 10px 0;
+}
+
+.comment__text .active {
+    height: auto;
+}
