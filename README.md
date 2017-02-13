@@ -2,7 +2,7 @@
 React-Redux work sample.
 
 ## Install
-To run the app, you must run next commands in your terminal:
+Run next commands in your terminal:
 
 - `npm install`
 - `npm run start`
