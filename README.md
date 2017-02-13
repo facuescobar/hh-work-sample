@@ -1,4 +1,4 @@
-# High Horse Work Sample
+# Work Sample
 React-Redux work sample.
 
 ## Install
